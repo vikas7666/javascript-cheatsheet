@@ -226,7 +226,11 @@ If you omit the second parameter, the method will slice out the rest of the str
 ```
 let part = str.slice(7);
 str.slice(7); // Banana, Kiwi
+```
+or, counting from the end:
 
+```
+let part = str.slice(-12); // Banana, Kiwi
 ```
 
 
