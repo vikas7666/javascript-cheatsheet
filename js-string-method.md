@@ -42,7 +42,7 @@ let part = str.slice(-12); // Banana, Kiwi
 
 ```
 let str = "Apple, Banana, Kiwi";
-let part = str.substring(7, 13);
+let part = str.substring(7, 13); // Banana
 ```
 If you omit the second parameter, the substring will slice out the rest of the str
 
