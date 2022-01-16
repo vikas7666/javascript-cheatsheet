@@ -103,4 +103,71 @@ let carName = "Volvo";
 ```
 
 
+## CONST
+- ``Variables defined with const cannot be Redeclared.``
+- ``Variables defined with const cannot be Reassigned.``
+- ``Variables defined with const have Block Scope.``
+- ``const variables must be assigned a value when they are declared:``
+
+```
+ const PI = 3.141592653589793; // Correct
+PI = 3.14;      // This will give an error
+PI = PI + 10;   // This will also give an error 
+```
+
+Incorrect
+
+``` 
+const PI;
+PI = 3.14159265359;
+```
+
+### When to use JavaScript const?
+* A new Array
+* A new Object
+* A new Function
+* A new RegExp
+
+#### Constant Objects and Arrays
+``It does not define a constant value. It defines a constant reference to a value. ``
+
+ ### Because of this you can NOT:
+ - Reassign a constant value
+ - Reassign a constant array
+ - Reassign a constant object
+
+ ### Because of this you can NOT:
+ - Change the elements of constant array
+ - Change the properties of constant object
+
+ ```
+ // You can create a constant array:
+const cars = ["Saab", "Volvo", "BMW"];
+
+// You can change an element:
+cars[0] = "Toyota";
+
+// You can add an element:
+cars.push("Audi");
+ ```
+### But you can NOT reassign the array:
+
+```
+const cars = ["Saab", "Volvo", "BMW"];
+cars = ["Toyota", "Volvo", "Audi"]; 
+
+```
+
+#### const Hoisting
+*  Variables defined with const are also hoisted to the top of the block, but not initialized
+* Using a const variable before it is declared will result in a ReferenceError
+
+```
+carName = "Saab";
+const carName = "Volvo"; 
+// ReferenceError: can't access lexical declaration 'carName' before initialization
+```
+
+
+
 
