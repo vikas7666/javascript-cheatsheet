@@ -170,7 +170,7 @@ const carName = "Volvo";
 
 #### JavaScript Comparison Operators
 
-| Symboal | Description |
+| Operator | Description |
 |----|----|
 |==|equal to|
 |===| equal value and equal type |
@@ -180,6 +180,16 @@ const carName = "Volvo";
 |<|less than|
 |>= |greater than or equal to|
 |<=|?|
+
+#### JavaScript Type Operators
+
+
+| Operator | Description |
+|----|----|
+|typeof|Returns the type of a variable|
+|instanceof |Returns true if an object is an instance of an object type|
+
+
 
 
 
