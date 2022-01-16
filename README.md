@@ -69,4 +69,38 @@ let x = 2 + 3 + "5"; // output 55
 - ``The let and const keywords were added to JavaScript in 2015.``
 
 
+## Let
+- ``Variables defined with let cannot be Redeclared.``
+- ``Variables defined with let must be Declared before use.``
+- ``Variables defined with let have Block Scope.``
+- ``Redeclaring a variable in the same block is NOT allowed``
+- ``Variables declared inside a { } block cannot be accessed from outside the block:``
+
+```
+let x = "John Doe";
+let x = 0; // SyntaxError: 'x' has already been declared 
+// we cannot Redeclared let variable
+```
+
+#### Var Hoisting
+* Variables defined with var are hoisted to the top and can be initialized at any time. 
+* Meaning: You can use the variable before it is declared:
+
+```
+carName = "Volvo";
+var carName;  // means before decalring variable we can use 
+
+```
+
+#### let Hoisting
+*  Variables defined with let are also hoisted to the top of the block, but not initialized
+* Using a let variable before it is declared will result in a ReferenceError
+
+```
+carName = "Saab";
+let carName = "Volvo"; 
+// ReferenceError: can't access lexical declaration 'carName' before initialization
+```
+
+
 
