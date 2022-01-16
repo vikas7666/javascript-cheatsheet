@@ -76,8 +76,7 @@ str.substr(7); // kiwi
 ### Replacing String Content
 - `` The replace() method does not change the string it is called on.``
 - ``The replace() method returns a new string ``
-
-The replace() method returns a new strin ``
+` `` The replace() method returns a new strin ``
 * The replace() method replaces a specified value with another value in a string:
 
 ```
@@ -119,5 +118,8 @@ let text2 = "World";
 let text3 = text1.concat(" ", text2); // Hello World!
 ```
 ## JavaScript String trim()
- *The trim() method removes whitespace from both sides of a string:
-```
+ * The trim() method removes whitespace from both sides of a string:
+ ```
+  let text1 = "      Hello World!      ";
+  let text2 = text1.trim();
+ ```
