@@ -57,4 +57,27 @@ To replace all matches, use a regular expression with a /g flag (global match):
 ```
 let text = "Please visit Microsoft and Microsoft!";
 let newText = text.replace(/Microsoft/g, "W3Schools");
+
+```
+let text1 = "Hello World!";
+let text2 = text1.toUpperCase(); // HELLO WORLD!
+```
+JavaScript String toLowerCase()
+
+```
+let text1 = "Hello World!";       // String
+let text2 = text1.toLowerCase();  // text2 is text1 converted to lower 
+
+```
+## Converting to Upper and Lower Case
+
+concat() joins two or more strings:
+
+```
+let text1 = "Hello";
+let text2 = "World";
+let text3 = text1.concat(" ", text2); // Hello World!
+```
+## JavaScript String trim()
+ *The trim() method removes whitespace from both sides of a string:
 ```
