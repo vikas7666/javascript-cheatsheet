@@ -189,6 +189,21 @@ const carName = "Volvo";
 |typeof|Returns the type of a variable|
 |instanceof |Returns true if an object is an instance of an object type|
 
+## Data Types
+
+Javascript is a dynamically typed language and hence though there are data types, variables are not bound to them.
+
+|Data Type | Description |
+|----|----|
+|number| Represents numbers like integers, floating-values etc|
+|string| Represents one or more characters|
+|bigint| Represents integers of arbitrary length|
+|boolean| Represents either true or false|
+|Arrays| arrays are written with square brackets|
+|object| objects are written with curly braces {}|
+|undefined| a variable without a value, has the value undefined
+|null| Represents unknown values|
+
 
 
 
