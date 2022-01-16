@@ -204,7 +204,30 @@ const carName = "Volvo";
 |typeof|Returns the type of a variable|
 |instanceof |Returns true if an object is an instance of an object type|
 
+### Extracting String Parts
 
+- ``JavaScript counts positions from zero. ``
+- ``First position is 0. && Second position is 1. ``
+
+* slice(start, end)
+* substring(start, end)
+* substr(start, length)
+
+## slice()
+* slice() extracts a part of a string and returns the extracted part in a new string.
+* The method takes 2 parameters: the start position, and the end position (end not included).
+
+```
+let str = "Apple, Banana, Kiwi";
+str.slice(7,13); // Banana
+```
+If you omit the second parameter, the method will slice out the rest of the str
+
+```
+let part = str.slice(7);
+str.slice(7); // Banana, Kiwi
+
+```
 
 
 
