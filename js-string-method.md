@@ -109,7 +109,7 @@ let text1 = "Hello World!";       // String
 let text2 = text1.toLowerCase();  // text2 is text1 converted to lower 
 
 ```
-## Converting to Upper and Lower Case
+### JavaScript String concat()
 
 concat() joins two or more strings:
 
@@ -119,7 +119,7 @@ let text2 = "World";
 let text3 = text1.concat(" ", text2); // Hello World!
 ```
 
-## JavaScript String trim()
+### JavaScript String trim()
  * The trim() method removes whitespace from both sides of a string:
  ```
   let text1 = "      Hello World!      ";
