@@ -204,6 +204,11 @@ const carName = "Volvo";
 |typeof|Returns the type of a variable|
 |instanceof |Returns true if an object is an instance of an object type|
 
+```
+typeof 0 //  "number"
+typeof "" // string
+```
+
 
 
 
