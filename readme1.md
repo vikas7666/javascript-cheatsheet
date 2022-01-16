@@ -1,4 +1,42 @@
-## substring()
+## Extracting String Parts
+
+- ``JavaScript counts positions from zero. ``
+- ``First position is 0. && Second position is 1. ``
+
+* slice(start, end)
+* substring(start, end)
+* substr(start, length)
+
+### slice()
+* slice() extracts a part of a string and returns the extracted part in a new string.
+* The method takes 2 parameters: the start position, and the end position (end not included).
+
+```
+let str = "Apple, Banana, Kiwi";
+str.slice(7,13); // Banana
+```
+If a parameter is negative, the position is counted from the end of the string.
+
+This example slices out a portion of a string from position -12 to position -6: 
+
+```
+let str = "Apple, Banana, Kiwi";
+let part = str.slice(-12, -6); // Banana
+
+```
+If you omit the second parameter, the method will slice out the rest of the string
+
+```
+let part = str.slice(7);
+str.slice(7); // Banana, Kiwi
+```
+or, counting from the end:
+
+```
+let part = str.slice(-12); // Banana, Kiwi
+```
+
+### substring()
 * substring() is similar to slice().
 * The difference is that substring() cannot accept negative indexes.
 
@@ -14,7 +52,7 @@ str.slice(7); // Banana, Kiwi
 
 ```
 
-## substr()
+### substr()
 * substr() is similar to slice().
 * The difference is that the second parameter specifies the length of the extracted part.
 
@@ -35,7 +73,7 @@ If the first parameter is negative, the position counts from the end of the stri
 str.substr(7); // kiwi
 ```
 
-## Replacing String Content
+### Replacing String Content
 - `` The replace() method does not change the string it is called on.``
 - ``The replace() method returns a new string ``
 
@@ -48,7 +86,7 @@ let newText = text.replace("Microsoft", "W3Schools");
 // Please visit W3Schools!
 ```
 
-## Regular expression
+### Regular expression
 
 `` Regular expressions are written without quotes. ``
 
@@ -57,6 +95,8 @@ To replace all matches, use a regular expression with a /g flag (global match):
 ```
 let text = "Please visit Microsoft and Microsoft!";
 let newText = text.replace(/Microsoft/g, "W3Schools");
+
+## Converting to Upper and Lower Case
 
 ```
 let text1 = "Hello World!";
