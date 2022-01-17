@@ -35,7 +35,7 @@ str.indexOf("locate", 7);  // locate 7 in come in 7 position that's why if we pa
 - `` The search() method searches a string for a specified value and returns the position of the match:``
 
 ```
-et str = "Please locate where 'locate' occurs!";
+let str = "Please locate where 'locate' occurs!";
 str.search("locate");  // 7
 ``` 
 ### Did You Notice? 
@@ -47,6 +47,7 @@ The two methods are NOT equal. These are the differences:
 - ``The indexOf() method cannot take powerful search values (regular expressions).``
 
 ### String match()
+
 - The match() method searches a string for a match against a regular expression, and returns the matches, as an Array object.
 
 - `` If a regular expression does not include the g modifier (to perform a global search), the match() method will return only the first match in the string. ``
@@ -65,7 +66,8 @@ text.match(/ain/gi);  // ain,AIN,ain,ain  // g means global
 ### String includes()
 
 - The includes() method returns true if a string contains a specified value.
-
+- 
+```
 let text = "Hello world, welcome to the universe.";
 text.includes("world");
 ```
