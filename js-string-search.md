@@ -61,3 +61,17 @@ Perform a global, case-insensitive search for "ain":
 ```
 let text = "The rain in SPAIN stays mainly in the plain";
 text.match(/ain/gi);  // ain,AIN,ain,ain  // g means global
+```
+### String includes()
+
+- The includes() method returns true if a string contains a specified value.
+
+let text = "Hello world, welcome to the universe.";
+text.includes("world");
+```
+Check if a string includes "world", starting the search at position 12:
+
+```
+let text = "Hello world, welcome to the universe.";
+text.includes("world", 12);
+```
