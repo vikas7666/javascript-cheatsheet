@@ -38,3 +38,26 @@ str.indexOf("locate", 7);  // locate 7 in come in 7 position that's why if we pa
 et str = "Please locate where 'locate' occurs!";
 str.search("locate");  // 7
 ``` 
+### Did You Notice? 
+
+- ``The two methods, indexOf() and search(), are equal? ``
+The two methods, indexOf() and search(), are equal?
+The two methods are NOT equal. These are the differences:
+- ``The search() method cannot take a second start position argument. ``
+- ``The indexOf() method cannot take powerful search values (regular expressions).``
+
+### String match()
+- The match() method searches a string for a match against a regular expression, and returns the matches, as an Array object.
+
+- `` If a regular expression does not include the g modifier (to perform a global search), the match() method will return only the first match in the string. ``
+
+
+```
+let text = "The rain in SPAIN stays mainly in the plain";
+text.match(/ain/g);
+```
+Perform a global, case-insensitive search for "ain":
+
+```
+let text = "The rain in SPAIN stays mainly in the plain";
+text.match(/ain/gi);  // ain,AIN,ain,ain  // g means global
