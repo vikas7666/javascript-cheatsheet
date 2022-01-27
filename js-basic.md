@@ -97,6 +97,12 @@ let x = 0; // SyntaxError: 'x' has already been declared
 // we cannot Redeclared let variable
 ```
 
+```
+a = 10;
+let a ;
+console.log(a) // ReferenceError: Cannot access 'a' before initialization
+```
+
 #### Var Hoisting
 * Variables defined with var are hoisted to the top and can be initialized at any time. 
 * Meaning: You can use the variable before it is declared:
